@@ -1,0 +1,9 @@
+.icon {
+   width: 1rem;
+   height: 1rem;
+   fill: var(--content);
+}
+
+.icon:hover {
+   fill: var(--color);
+}

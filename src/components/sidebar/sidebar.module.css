@@ -1,0 +1,66 @@
+
+.sidebar:hover .about_sidebar, .thin_sidebar:hover ~ .about_sidebar, .about_sidebar:hover { left: 2rem }
+
+@media screen and (max-height: 26rem) {
+	.sidebar:hover .about_sidebar, .thin_sidebar:hover ~ .about_sidebar, .about_sidebar:hover { left: 0 }
+}
+.about_sidebar {
+	background-color: var(--subtle);
+	display: grid; 
+	grid-template-columns: 1fr; 
+	grid-template-rows: 1fr 2rem; 
+	height: 100vh;
+	left: -18rem;
+	/* left: 2rem; */
+	position: fixed;
+	top: 0;
+	transition: 500ms;
+	width: 18rem;
+	z-index: 1;
+}
+
+.active {
+	left: -18rem;
+}
+.inactive {
+	left: 2rem;
+}
+
+.about_sidebar a {
+	font-size: 0.875rem;
+}
+
+.about_sidebar img {
+	display: block;
+	border-radius: 50%;
+	margin: auto;
+   margin-bottom: 2rem;
+	width: 12rem;
+}
+
+.about_sidebar .content { margin: 2rem }
+
+@media screen and (max-width: 25rem) {
+	.about_sidebar {
+		height: 100%;
+		left: -100%;
+		width: calc(100% - 2rem);
+	}
+	.about_sidebar img { max-width: 100% }
+}
+
+@media screen and (max-height: 40rem) {
+   .about_sidebar {
+      overflow: scroll
+   }
+}
+
+
+@media screen and (max-height: 26rem) {
+   .about_sidebar {
+      width: calc(100vw - 2rem);
+		left: -100vw;
+   }
+}
+
+

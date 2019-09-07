@@ -1,0 +1,39 @@
+@import "type.css";
+@import "normalize.css";
+
+:root {
+   --content: #202020;
+   --color: #ed2540;
+   --subtle: #f9f9f9;
+   --background: white;
+}
+
+/* :root {
+   --content: white;
+   --color: #ed2540;
+   --subtle: #2e2e2e;
+   --background: #202020;
+} */
+
+body {
+   background-color: var(--background);
+	font-family: "Maitree", serif;
+	font-size: 16px;
+	margin: 0;
+}
+
+p, a, span { color: var(--content) }
+h1, h2, h3 { font-family: "Messapia", serif }
+p, span, a { font-size: 0.875rem }
+a { text-decoration: none }
+a:hover { color: var(--color) }
+
+/* * { background-color: rgba(255,0,0,.15); }
+* * { background-color: rgba(0,255,0,.15); }
+* * * { background-color: rgba(0,0,255,.15); }
+* * * * { background-color: rgba(255,0,255,.15); }
+* * * * * { background-color: rgba(0,255,255,.15); }
+* * * * * * { background-color: rgba(255,255,0,.15); }
+* * * * * * * { background-color: rgba(255,0,0,.15); }
+* * * * * * * * { background-color: rgba(0,255,0,.15); }
+* * * * * * * * * { background-color: rgba(0,0,255,.15); } */

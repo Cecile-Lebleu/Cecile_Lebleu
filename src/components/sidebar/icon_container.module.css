@@ -1,0 +1,33 @@
+.icon_container {
+	/* box-model: w, h, border, padding, margin */
+	height: 2rem;
+	/* display */
+	display: flex;
+		justify-content: center;
+		align-items: center;
+	/* style */
+	/* typography */  /* animation */ 
+}
+
+.icon_container a {
+   margin: 0;
+   padding: 0;
+   height: 1rem;
+}
+
+@media (max-height: 30rem) {
+   .icon_container {
+		height: 1.75rem;
+      /* background-color: blue; */
+	}
+}
+@media (max-height: 28rem) {
+   .icon_container {
+		height: 1.5rem
+	}
+}
+@media (max-width: 25rem) and (max-height: 28rem) {
+   .icon_container {
+      display: none;
+   }
+}

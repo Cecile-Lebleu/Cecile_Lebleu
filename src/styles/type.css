@@ -1,0 +1,130 @@
+/* @font-face {
+   font-family: 'Maitree';
+   font-style: normal;
+   font-weight: 200;
+   font-display: swap;
+   src: local('Maitree ExtraLight'), local('Maitree-ExtraLight'), url(https://fonts.gstatic.com/s/maitree/v3/MjQDmil5tffhpBrklhGNaJaivZVi-OA.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+   font-family: 'Maitree';
+   font-style: normal;
+   font-weight: 300;
+   font-display: swap;
+   src: local('Maitree Light'), local('Maitree-Light'), url(https://fonts.gstatic.com/s/maitree/v3/MjQDmil5tffhpBrklnWOaJaivZVi-OA.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+} */
+
+@font-face {
+   font-family: 'Maitree';
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+   src: local('Maitree'), 
+      url('fonts/Maitree.woff2') format('woff2'),
+      url('fonts/Maitree.ttf') format('ttf');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* 
+@font-face {
+   font-family: 'Maitree';
+   font-style: normal;
+   font-weight: 500;
+   font-display: swap;
+   src: local('Maitree Medium'), local('Maitree-Medium'), url(https://fonts.gstatic.com/s/maitree/v3/MjQDmil5tffhpBrkli2PaJaivZVi-OA.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+   font-family: 'Maitree';
+   font-style: normal;
+   font-weight: 600;
+   font-display: swap;
+   src: local('Maitree SemiBold'), local('Maitree-SemiBold'), url(https://fonts.gstatic.com/s/maitree/v3/MjQDmil5tffhpBrklgGIaJaivZVi-OA.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+   font-family: 'Maitree';
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+   src: local('Maitree Bold'), local('Maitree-Bold'), url(https://fonts.gstatic.com/s/maitree/v3/MjQDmil5tffhpBrklmWJaJaivZVi-OA.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+} */
+/* 
+@font-face {
+   font-family: 'Butler';
+   src: url('fonts/Butler-Light.woff2') format('woff2'),
+      url('fonts/Butler-Light.woff') format('woff');
+   font-weight: 300;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Butler';
+   src: url('fonts/Butler-UltraLight.woff2') format('woff2'),
+      url('fonts/Butler-UltraLight.woff') format('woff');
+   font-weight: 200;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Butler';
+   src: url('fonts/Butler-Medium.woff2') format('woff2'),
+      url('fonts/Butler-Medium.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Butler';
+   src: url('fonts/Butler-Light.woff2') format('woff2'),
+      url('fonts/Butler-Light.woff') format('woff');
+   font-weight: 300;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Butler';
+   src: url('fonts/Butler-Black.woff2') format('woff2'),
+      url('fonts/Butler-Black.woff') format('woff');
+   font-weight: 900;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Butler';
+   src: url('fonts/Butler-Bold.woff2') format('woff2'),
+      url('fonts/Butler-Bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Butler';
+   src: url('fonts/Butler-ExtraBold.woff2') format('woff2'),
+      url('fonts/Butler-ExtraBold.woff') format('woff');
+   font-weight: 800;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Butler';
+   src: url('fonts/Butler.woff2') format('woff2'),
+      url('fonts/Butler.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+ */
+
+
+@font-face {
+   font-family: 'Messapia';
+   src: url('fonts/Messapia-Regular.woff2') format('woff2'),
+      url('fonts/Messapia-Regular.woff') format('woff'),
+      url('fonts/Messapia-Regular.eot') format('eot');
+   font-weight: normal;
+   font-style: normal;
+}
