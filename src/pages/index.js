@@ -1,29 +1,38 @@
-
-// React
 import React from "react"
-import { Helmet } from "react-helmet"
+// import { Helmet } from "react-helmet"
 
-// Styles
-import style from "../components/index.module.css"
-// Components
+import style from "./index.module.scss"
+
 import Layout from "../components/layout"
-import Project from "../components/project"
-import Tokamaki from "../components/tokamaki_logo"
-// Images
-import SWA from "../images/Sauna_With_Alex.svg"
-import Diarly from "../images/Diarly.png"
-import Modula from "../images/Modula.svg"
-import HEXaDecimate from "../images/HEXaDecimate.svg"
-import Korellow from "../images/Korellow.svg"
-import TGB from "../images/Thrive_Grab_Bar_Co.svg"
-import Taketofu from "../images/taketofu.svg"
-import Myara from "../images/Myara.svg"
+import About from "../components/about"
+// import Project from "../components/project"
+// import Tokamaki from "../components/tokamaki_logo"
+
+// import SWA from "../images/Sauna_With_Alex.svg"
+// import Diarly from "../images/Diarly.png"
+// import Modula from "../images/Modula.svg"
+// import HEXaDecimate from "../images/HEXaDecimate.svg"
+// import Korellow from "../images/Korellow.svg"
+// import TGB from "../images/Thrive_Grab_Bar_Co.svg"
+// import Taketofu from "../images/taketofu.svg"
+// import Myara from "../images/Myara.svg"
 
 
 
 export default () => (
    <Layout>
-      <Helmet>
+      <div className={style.intro}>
+         <div className={style.container}>
+            <div className={style.title}>
+               <span className={style.fleuron}>❧</span>
+               <h2><span>Front</span><br /><span>End & UI</span><br /><span>Developer</span></h2>
+            </div>
+         </div>
+         <div>
+            <About />
+         </div>
+      </div>
+      {/* <Helmet>
          <meta charSet="utf-8" lang="en" />
          <title>Cécile Lebleu</title>
          <meta name="Description" content="Portfolio website of designer & developer Cécile Lebleu" />
@@ -162,7 +171,7 @@ export default () => (
             />
          </Project>
       
-      </div>
+      </div> */}
          
    </Layout>
 )
