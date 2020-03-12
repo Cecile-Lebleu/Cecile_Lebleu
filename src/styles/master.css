@@ -1,11 +1,18 @@
-@import "type.css";
+/* * { outline: 1px solid coral } */
+
 @import "normalize.css";
+@import "type.css";
 
 :root {
-   --content: #202020;
+   --content: #363636;
    --color: #ed2540;
-   --subtle: #f9f9f9;
-   --background: white;
+   --highlight: hsl(0, 0%, 93%);
+   --highlightCode: hsl(0, 0%, 90%);
+   --background: hsl(0, 0%, 96%);
+   --body: "CrimsonPro", sans-serif;
+   --italic: "CrimsonProItalic";
+   --mono: "IBM Plex Mono", monospace;
+   --decorative: "Messapia", serif;
 }
 
 /* :root {
@@ -17,16 +24,8 @@
 
 body {
    background-color: var(--background);
-	font-family: "Maitree", serif;
-	font-size: 16px;
-	margin: 0;
+   margin: 0;
 }
-
-p, a, span { color: var(--content) }
-h1, h2, h3 { font-family: "Messapia", serif }
-p, span, a { font-size: 0.875rem }
-a { text-decoration: none }
-a:hover { color: var(--color) }
 
 /* * { background-color: rgba(255,0,0,.15); }
 * * { background-color: rgba(0,255,0,.15); }
