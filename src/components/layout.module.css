@@ -1,8 +1,0 @@
-.layout {
-   margin-left: 2rem;
-}
-@media screen and (max-height: 28rem) {
-   .layout {
-      margin: 3rem 0
-   }
-}
