@@ -12,6 +12,8 @@ export default ({ data }) => {
          <TextContent>
             <h1>{post.frontmatter.title}</h1>
             <p className={styles.mono}>Posted on {post.frontmatter.date}</p>
+            <p>{post.frontmatter.description}</p>
+            <hr />
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
          </TextContent>
       </Layout>
