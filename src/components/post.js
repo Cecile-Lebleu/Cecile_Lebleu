@@ -1,7 +1,6 @@
 import React from "react"
 import styles from "./post.module.scss"
 import { Link } from "gatsby"
-// import Img from "gatsby-image"
 // import Category from "./category"
 
 class Post extends React.Component {
@@ -15,6 +14,7 @@ class Post extends React.Component {
                <p className={styles.ttr}>{this.props.ttr} minute read</p>
                <p className={styles.date}>{this.props.date}</p>
             </div>
+            <hr />
          </Link>
       )
    }
