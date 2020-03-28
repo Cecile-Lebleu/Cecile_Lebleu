@@ -15,6 +15,7 @@ export default () => (
             <p>Nice to meet you! I’m Cécile Lebleu, brand designer turned front-end developer.</p>
             <p>I build interactive websites, brand identities, and design systems. I also like to make great food.</p>
             <p>If you're here, chances are, you want to learn more about who I am. So I have been brutally honest in the making of this slice of my life, so you're not missing out on details. To me, a personality is more important than a person's stacks or degrees. So if you like who I am and you think I can help you, please reach out — I'd like to be friends!</p>
+            <p>Currently interested in / working with: GatsbyJS, THREE.JS, Xcode & Swift, </p>
             <p>Some things I love:</p>
             <ul>
                <li><span className={styles.typography}>❧ </span> Typography</li>
