@@ -155,6 +155,7 @@ a:hover, a:hover h2 {
 }
 
 p i, li i {
+   font-style: normal;
    font-family: var(--italic);
 }
 
