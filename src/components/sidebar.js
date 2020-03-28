@@ -37,12 +37,12 @@ export default () => (
             activeClassName = {styles.active}
             partiallyActive={true}
          >blog</Link>
-         <Link
+         {/* <Link
             to="playground"
             className={styles.vertical_text}
             activeClassName = {styles.active}
             partiallyActive={true}
-         >play</Link>
+         >play</Link> */}
       </div>
       <div className={styles.icons}>
          <IconContainer
