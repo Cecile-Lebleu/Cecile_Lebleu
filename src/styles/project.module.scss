@@ -1,0 +1,48 @@
+.next {
+   text-align: right;
+   margin: 8rem 2rem;
+   transition-duration: 200ms;
+
+}
+
+.next:after {
+   content: " >";
+   opacity: 0;
+}
+
+.next:hover:after {
+   transition-duration: 200ms;
+   content: " >";
+   opacity: 1;
+}
+
+.back {
+   text-align: left;
+   margin: 8rem 2rem;
+   transition-duration: 200ms;
+}
+
+.back:before {
+   content: "< ";
+   opacity: 0;
+}
+
+.back:hover:before {
+   transition-duration: 200ms;
+   content: "< ";
+   opacity: 1;
+}
+
+.center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 2rem 0;
+}
+
+.grid {
+   margin: 2rem 0;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 1rem;
+}
