@@ -7,7 +7,7 @@ description: Take a look at my project filesystem, and how I scaled my organizat
 
 This week I'd like to share my project filesystem, how I manage it, and why I do it this way. My intention is not to say "this is the best filesystem" or "you should manage your files this way", because different people will need different methods, and there is rarely a true one-size-fits-all approach —to anything. That said, this is the system that works for me, and that I've developed over the past 5+ years. Use it, modify it, and leave a like if you find it useful!
 
-For a bit of background, I am a designer before being a developer, have been at it since around 2014, when I started drawing letters, learning graphic design and brand identity design. I have been developing (and therefore having to manage files for) very different types of projects throughout the years, including designing a [wonderful card game about cyber witches](https://cecilelebleu.com/hexadecimate/), and helping design a [diary app interface design](https://pureformstudio.com/diarly). 
+For a bit of background, I am a designer before being a developer, have been at it since around 2014, when I started drawing letters, learning graphic design and brand identity design. I have been developing (and therefore having to manage files for) very different types of projects throughout the years, including designing a [wonderful card game about cyber witches](https://cecilelebleu.com/hexadecimate/), and helping design a [diary app interface design](https://cecilelebleu.com/diarly).
 
 Since I started becoming a dev, I've modified my folder system to better fit a developer's needs, like easier access through the command line and IDEs, Git, and so on.
 
@@ -37,7 +37,7 @@ I mentioned I also have other folders next to the three `+` folders. These are a
 
 ## Individual project folders
 
-Most of the time, I'm working on projects located in my main working area. But I also play around in the `+Lab` and I spend a few hours every day in the `+Study` area. 
+Most of the time, I'm working on projects located in my main working area. But I also play around in the `+Lab` and I spend a few hours every day in the `+Study` area.
 
 Each of the project folders has a mind of its own. No two projects are alike, so project folders tend to vary. When it's a development project, I'll usually set up a git repository in the project folder. But git with design projects is a big no-no — file sizes tend to grow enormously. Some can be connected to GitHub, but it really depends on the nature of the project. Some project folders have only one or two files, others can have multiple folder levels down and gigabytes of files.
 
