@@ -154,7 +154,7 @@ a:hover, a:hover h2 {
    color: var(--color)
 }
 
-p i, li i {
+p i, li i, em {
    font-style: normal;
    font-family: var(--italic);
 }
