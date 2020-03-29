@@ -66,7 +66,7 @@ export default () => (
          />
          <IconContainer
             className={styles.icon_container}
-            link="https://twitter.com/CzlLebleu/"
+            link="https://twitter.com/CecileLebleu"
             name={<TwitterLogo />}
          />
          <IconContainer
