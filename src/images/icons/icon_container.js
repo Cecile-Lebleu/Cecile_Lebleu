@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./Icon_container.module.css"
+import styles from "./icon_container.module.css"
 
 export default ( props ) => (
    <div className={styles.icon_container}>
