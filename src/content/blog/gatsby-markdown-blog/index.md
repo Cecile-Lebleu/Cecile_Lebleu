@@ -2,7 +2,7 @@
 path: gatsby-markdown-blog
 date: 2020-03-11
 title: Gatsby Markdown blog
-description: Quick start guide to add or create a blog for your Gatsby site using Markdown files
+description: Quick-start guide to adding or creating a blog for your Gatsby, site using Markdown files for each post.
 categories: ["gatsby", "markdown", "graphql"]
 ---
 
@@ -38,7 +38,7 @@ module.exports = {
 
 In `plugins` > `options` > `path` we should insert the path to the folder where we will add the Markdown files, as well other relevant files, like the blog's related images (featured image, inline images).
 
-This could be as simple as `${__dirname}/src/` or as deep and complex as we need. The more specific the path is here, the less specific we will have to be in our queries; but if this path is too deep or too specific, we might not be able to access everything we need. Keep in mind that we have GraphiQL at our disposal — a tool that allows for easier GraphQL queries. Read more about that in the [Gatsby GraphQL tutorial]().
+This could be as simple as `${__dirname}/src/` or as deep and complex as we need. The more specific the path is here, the less specific we will have to be in our queries; but if this path is too deep or too specific, we might not be able to access everything we need. Keep in mind that we have GraphiQL at our disposal — a tool that allows for easier GraphQL queries.
 
 ### gatsby-transformer-remark
 
@@ -214,6 +214,5 @@ exports.createPages = async ({ graphql, actions }) => {
    })
 }
 ```
-
 
 And that should do it! I hope this quick start guide has been helpful for you.
