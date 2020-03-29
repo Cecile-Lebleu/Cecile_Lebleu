@@ -7,7 +7,6 @@ import IconContainer from "../images/icons/icon_container"
 import DevToLogo from "../images/icons/devto_logo"
 import DribbbleLogo from "../images/icons/dribbble_logo"
 import GithubLogo from "../images/icons/github_logo"
-import PinterestLogo from "../images/icons/pinterest_logo"
 import TwitterLogo from "../images/icons/twitter_logo"
 import MailLogo from "../images/icons/mail_logo"
 // import ColorModeSwitch from "./sidebar/color_mode"
@@ -58,11 +57,6 @@ export default () => (
             className={styles.icon_container}
             link="https://github.com/Cecile-Lebleu"
             name={<GithubLogo />}
-         />
-         <IconContainer
-            className={styles.icon_container}
-            link="https://pinterest.com/czllebleu/"
-            name={<PinterestLogo />}
          />
          <IconContainer
             className={styles.icon_container}
