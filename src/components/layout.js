@@ -1,6 +1,6 @@
 import React from "react"
 import Sidebar from "./sidebar"
-import style from "./layout.module.css"
+import style from "./layout.module.scss"
 
 export default ({ children }) => (
    <div>

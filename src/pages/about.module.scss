@@ -1,0 +1,42 @@
+.about {
+   .photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   
+      img {
+         border-radius: 50%;
+         width: 12rem;
+      }
+   }
+   h1 {
+      font-family: "Messapia", serif;
+      font-size: 2rem;
+      text-align: center;
+      margin: 2rem;
+   }
+   ul {
+      padding-inline-start: 0;
+
+      li {
+         list-style-type: none;
+         margin: 0 0 1rem 0;
+      }
+      
+      li:before {
+         padding-right: 1rem;
+      }
+
+      .typography { 
+         color: var(--color);
+         font-family: "Messapia", serif;
+      }
+   }
+   ul.simple {
+      padding-inline-start: 1.5rem;
+
+      li {
+         list-style-type: initial;
+      }
+   }
+}

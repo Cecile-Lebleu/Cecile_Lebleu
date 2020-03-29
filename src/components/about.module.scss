@@ -1,0 +1,39 @@
+@keyframes up {
+   from {
+      opacity: 0;
+      transform: translateY(200px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.about {
+   background: linear-gradient(var(--background), var(--highlight), var(--background));
+   width: 20rem;
+   height: 110vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 1.5rem;
+   margin-top: -30vh;
+
+   opacity: 0;
+   animation-name: up;
+   animation-duration: 1500ms;
+   animation-delay: 500ms;
+   animation-fill-mode: forwards;
+
+   img {
+      border-radius: 50%;
+      width: 10rem;
+      margin-bottom: 1rem;
+   }
+   p {
+      max-width: 30rem;
+      text-align: left;
+      margin: 0.5rem 0;
+   }
+}
