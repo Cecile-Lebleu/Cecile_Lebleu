@@ -2,7 +2,7 @@
 path: basic-accessibility
 date: 2020-03-17T15:10:00.000Z
 title: Basics of Accessibility
-description: A compilation of web accessibility best practices. 
+description: A compilation of web accessibility best practices. It's always a good idea to review all these before publishing a website.
 categories: ["building-blocks"]
 ---
 
@@ -116,4 +116,4 @@ Avoid the use of old-standard Captchas. Whenever possible, keep things easy to n
 
 ## Final tests
 
-- [Validating is your friend!](~https://validator.w3.org/~)
+- [Validating is your friend!](https://validator.w3.org/)
