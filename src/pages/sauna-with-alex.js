@@ -33,7 +33,7 @@ export default () => {
             <img src={Image3} alt="Sauna With Alex website homepage" />
          </TextContent>
          {/* <img style={{maxWidth: "100%"}} src={Image1} alt="Diarly App for Mac and iOS" /> */}
-         <Link to="/subaltern-games/">
+         <Link to="/hexadecimate/">
             <h2 className={styles.next}>
                Next up: Subaltern Games
             </h2>

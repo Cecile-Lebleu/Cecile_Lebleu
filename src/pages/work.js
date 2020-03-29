@@ -21,7 +21,7 @@ export default () => {
                <h2>Sauna With Alex</h2>
                <p>Logotype, Website Design & Development <br /> 2019</p>
             </Link>
-            <Link to="/subaltern-games/" className={styles.hoverLink}>
+            <Link to="/hexadecimate/" className={styles.hoverLink}>
                <h2>Subaltern Games</h2>
                <p>HEXaDecimate Card Game Design, Layout, & Promo <br /> 2018</p>
             </Link>
