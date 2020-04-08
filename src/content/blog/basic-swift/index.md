@@ -10,6 +10,8 @@ This is not meant to teach you everything there is about Swift — that's what t
 
 Swift is a programming language built for developing apps for the Apple ecosystem. It’s somewhat similar to C and Objective-C, which doesn’t mean much to me — if you’re in the same position, this guide is for you.
 
+> For this quick-start guide, I will assume you already know modern JavaScript fairly well. I will constantly compare JavaScript and Swift, just to make it easier for us JS-folk.
+
 ## Basic syntax
 
 - **Comments** work like in JavaScript. `//` starts an inline comment, `/* ... */` defines a multi-line one.
@@ -20,21 +22,20 @@ Swift is a programming language built for developing apps for the Apple ecosyste
 
 ### Declaration
 
-Variables and constants have to me declared before they can be used.
+Variables and constants have to me declared before they can be used. The keywords used for declaring them are sort of opposite to JavaScript's.
 
-- **Variables** are defined with `var`. Once a variable is defined, its *type* cannot be changed.
-- **Constants** are defined with `let`. Once a constant is defined, its *type* and *value* cannot be changed.
+- **Variables** are defined with `var`.
+- **Constants** are defined with `let`.
 
-If a value isn’t going to change, always declare it as a constant.
+> If a value isn’t going to change, always declare it as a constant.
 
 ```swift
 var myVariable = 10
-myVariable = 11 // OK
+myVariable = 11
 myVariable = "String" // Error!
 
 let myConstant = 10
-myConstant = 11 // Error!
-myConstant = "String" // Error!
+myConstant = 11       // Error!
 ```
 
 Multiple constants or variables can be declared at once.
@@ -46,29 +47,126 @@ let a = 1, b = 2, c = 3
 
 ### Naming
 
-Variable and constant names are very free. They can contain most characters, including emojis and foreign characters like Japanese kanji. They cannot start with a number.
+Variable and constant names are very free. They can contain most characters, including emojis and non-latin characters. They cannot start with a number.
 
 ## Types
 
-Swift is type-safe, which means that its variables have types, in contrast to regular JavaScript. We won’t go into the details of all the possible types there are in Swift.
-Swift has type inference, which figures out which type to give your variable when you declare it with a value.
+Like JavaScript, swift has type inference, which figures out which type to give your variable when you declare it with a value.
 
 ```swift
-let two = 2 // inferred to be an Int
-let pi = 3.14 // inferred to be a Double
-let name = "Cécile" // inferred to be a String
+let two  = 2        // inferred to be an Int
+let pi   = 3.14     // inferred to be a Double
+let name = "Snoopy" // inferred to be a String
 ```
 
-It’s important to know that a variable’s type cannot be changed, but its value can.
+> Swift has two main types of numbers: Integers and Doubles. Integers are whole numbers, while Doubles have decimal points. Math can only happen when all the values are of the same type: If we need to calculate an Integer and a Double together, one of them will have to be converted so they match.
+>
+> There are other types of numbers in Swift, but no need to discuss them now!
+
+Swift is type-safe. It’s important to know that trying to change a variable's type in this manner will cause an error.
 
 ```swift
-var welcome: String // A type annotation, which defines the variable's type. Not very common.
 welcome = "Welcome!"
-welcome = 1 // Error! At compile time.
 welcome = "Hi!"
+welcome = 1 // Error! At compile time.
 ```
 
-### Tuples
+### Empty variables
+
+If you need to declare an empty variable, you have to declare its type. This is called a type annotation.
+
+```swift
+var welcome: String
+```
+
+### Type conversion
+
+Types are never implicitly converted.
+
+```swift
+let text = "Slices on a medium pizza: "
+let slices = 8
+let pizzaSize = text + slices          // Error!
+let pizzaSize = text + String(slices)  // Works
+```
+
+### Variables in strings
+
+However, there's an easier way to do this: The `\()` syntax. It allows us to add a variable, or a math operation, inside a string declaration. *Like JavaScript's backtick syntax with `${}`.*
+
+```swift
+let mediumPizza = 8
+let largePizza = 12
+let mediumStatement = "A medium pizza has \(mediumPizza) slices."
+// A medium pizza has 8 slices
+let myPizza = "I have \(mediumPizza + largePizza) slices of pizza."
+// I have 20 slices of pizza.
+```
+
+> That's a lot of pizza!
+
+### Multi-line strings
+
+Multiline strings are declared with `"""String"""`.
+
+```swift
+let quote = """
+“You have power over your mind - not outside events.
+Realize this, and you will find strength.”
+— Marcus Aurelius, Meditations
+"""
+```
+
+## Arrays and Dictionaries
+
+> Dictionaries are objects
+
+Array
+
+```swift
+var shoppingList = ["tea", "crackers", "tulips"]
+
+shoppingList[0] = "coffee"
+
+// shoppingList is now
+// ["coffee", "crackers", "tulips"]
+
+shoppingList.append("asparagus")
+
+// shoppingList is now
+// ["coffee", "crackers", "tulips", "asparagus"]
+```
+
+Dictionary
+
+``` swift
+var priceList = [
+   "tea": 4.99,
+   "crackers": 2.50,
+   "tulips": 4.00,
+   "coffee": 5.99,
+]
+
+priceList["asparagus"] = 2.00
+
+// priceList is now
+// [
+//    "tea: 4.99,
+//    "crackers": 2.50,
+//    "tulips": 4.00,
+//    "coffee": 5.99,
+//    "asparagus": 2.00,
+// ]
+```
+
+### Empty arrays and dictionaries
+
+```swift
+var emptyArray = [String]()
+var emptyDictionary = [String: Float]()
+```
+
+## Tuples
 
 Think of tuples like groups of information, somewhere in between arrays and objects in JavaScript. They contain related values, of any type.
 
@@ -105,3 +203,33 @@ print("The status code is \(https200Status.statusCode)") // 200
 ```
 
 Tuples are not recommended for complex data structure. Use a class or structure instead.
+
+## Basic functionality
+
+Conditionals:
+
+- `if`
+- `switch`
+
+Loops:
+
+- `for-in`
+- `while`
+- `repeat-while`
+
+The condition or loop doesn't need parentheses.
+The body must be surrounded by braces.
+
+```swift
+let individualScores = [75, 43, 103, 87, 12]
+var teamScore = 0
+for score in individualScores {
+   if score > 50 {
+      teamScore += 3
+   } else {
+      teamScore += 1
+   }
+}
+print(teamScore)
+// Prints "11"
+```
