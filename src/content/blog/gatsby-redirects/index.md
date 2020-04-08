@@ -1,5 +1,5 @@
 ---
-path: gatsby-redirect
+path: gatsby-redirects
 date: 2020-05-08
 title: How to Add a Redirect to Gatsby Pages
 description: Adding a redirect to and from pages in a Gatsby site
