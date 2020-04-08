@@ -2,7 +2,7 @@
 path: gatsby-redirect
 date: 2020-05-08
 title: How to Add a Redirect to Gatsby Pages
-description: Adding a redirect from and to specific pages using in a Gatsby site
+description: Adding a redirect to and from pages in a Gatsby site
 categories: ["gatsby", "quick tip"]
 ---
 
