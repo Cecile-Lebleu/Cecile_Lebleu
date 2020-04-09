@@ -17,7 +17,7 @@
 }
 @media (prefers-color-scheme: dark) {
    :root {
-      --content: white;
+      --content: #cecece;
       --color: hsl(349, 82%, 55%);
       --highlight:     #272727;
       --highlightCode: #222222;
