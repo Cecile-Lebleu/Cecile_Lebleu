@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import styles from "./index.module.scss"
 
@@ -24,17 +24,6 @@ export default () => (
          <div>
             <About />
          </div>
-      </div>
-      <div className={styles.undermenu}>
-         <Link to="/work/" className={styles.hoverLink}>
-            <h2>Work</h2>
-         </Link>
-         <Link to="/about/" className={styles.hoverLink}>
-            <h2>About</h2>
-         </Link>
-         <Link to="/blog/" className={styles.hoverLink}>
-            <h2>Blog</h2>
-         </Link>
       </div>
    </Layout>
 )
