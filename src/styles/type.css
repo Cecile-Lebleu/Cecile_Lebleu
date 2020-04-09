@@ -163,7 +163,7 @@ p b, li b {
    font-variation-settings: 'wght'500;
 }
 
-code {
+pre.code, p code, li code {
    font-family: var(--mono);
    font-size: 0.96rem;
    background-color: var(--highlightCode);
@@ -171,9 +171,16 @@ code {
    line-height: 1.5rem;
    border-radius: 4px;
    overflow-x: scroll;
+   line-height: 1.2rem;
+   overflow-y: visible;
 }
 code::-webkit-scrollbar {
    display: none;
+}
+
+code span {
+   font-family: var(--mono);
+   font-size: 0.96rem;
 }
 
 
