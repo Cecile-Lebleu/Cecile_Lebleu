@@ -17,7 +17,10 @@ module.exports = {
                {
                   resolve: `gatsby-remark-vscode`,
                   options: {
-                     theme: 'Solarized Light',
+                     theme: {
+                        default: 'Solarized Light',
+                        dark: 'Dark+ (default dark)'
+                     },
                      wrapperClassName: 'code',
                      injectStyles: false,
                      replaceColor: oldColor => ({
