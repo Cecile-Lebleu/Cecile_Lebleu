@@ -19,8 +19,8 @@
    :root {
       --content: #cecece;
       --color: hsl(349, 82%, 55%);
-      --highlight:     #272727;
-      --highlightCode: #222222;
+      --highlight:     #222222;
+      --highlightCode: #272727;
       --background:    #181818;
       --body: "CrimsonPro", sans-serif;
       --italic: "CrimsonProItalic";
