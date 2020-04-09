@@ -5,7 +5,8 @@
 
 :root {
    --content: #363636;
-   --color: #ed2540;
+   /* --color: #ed2540; */
+   --color: hsl(349, 82%, 55%);
    --highlight: hsl(0, 0%, 93%);
    --highlightCode: hsl(0, 0%, 90%);
    --background: hsl(0, 0%, 96%);
@@ -14,13 +15,19 @@
    --mono: "IBM Plex Mono", monospace;
    --decorative: "Messapia", serif;
 }
-
-/* :root {
-   --content: white;
-   --color: #ed2540;
-   --subtle: #2e2e2e;
-   --background: #202020;
-} */
+@media (prefers-color-scheme: dark) {
+   :root {
+      --content: white;
+      --color: hsl(349, 82%, 55%);
+      --highlight:     #272727;
+      --highlightCode: #222222;
+      --background:    #181818;
+      --body: "CrimsonPro", sans-serif;
+      --italic: "CrimsonProItalic";
+      --mono: "IBM Plex Mono", monospace;
+      --decorative: "Messapia", serif;
+   }
+}
 
 body {
    background-color: var(--background);
