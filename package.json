@@ -13,19 +13,19 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
-    "gatsby": "^2.13.73",
-    "gatsby-cli": "^2.10.9",
-    "gatsby-plugin-react-helmet": "^3.1.5",
-    "gatsby-plugin-sass": "^2.1.27",
+    "gatsby": "^2.20.36",
+    "gatsby-cli": "^2.11.22",
+    "gatsby-plugin-react-helmet": "^3.2.5",
+    "gatsby-plugin-sass": "^2.2.4",
     "gatsby-remark-vscode": "^2.0.3",
-    "gatsby-source-filesystem": "^2.1.51",
-    "gatsby-transformer-remark": "^2.6.56",
-    "node-sass": "^4.13.1",
-    "prismjs": "^1.19.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "gatsby-source-filesystem": "^2.2.5",
+    "gatsby-transformer-remark": "^2.7.5",
+    "node-sass": "^4.14.0",
+    "prismjs": "^1.20.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
-    "react-three-fiber": "^4.0.23"
+    "react-three-fiber": "^4.1.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
