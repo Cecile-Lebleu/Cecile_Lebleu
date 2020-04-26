@@ -17,13 +17,3 @@ export default ( props ) => (
       </div>
    </Link>
 )
-// 
-// <h2
-//    className={style.title}
-//    // style={{
-//    //    fontSize: `2rem`,
-//    //    textAlign: `center`,
-//    // }}
-// >
-//    {props.name}
-// </h2>
