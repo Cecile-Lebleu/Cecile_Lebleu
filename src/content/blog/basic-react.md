@@ -126,7 +126,6 @@ export default MyComponent
 ```
 
 Then, in our parent container (`index.js` or other) we must import that component
--
 
 ```js
 import React from "react"
@@ -209,7 +208,7 @@ const App = (props) => <div>
 </div>
 ```
 
-#### Props in Class Components
+### Props in Class Components
 
 To use props in class-based components, you must use `{this.props.name}` instead of `{props.name}`.
 
