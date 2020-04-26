@@ -3,6 +3,7 @@ path: folder-management
 date: 2019-06-18
 title: How I manage my projects, folders, and files
 description: Take a look at my project filesystem, and how I scaled my organization to cover development and graphic design projects.
+categories: []
 ---
 
 This week I'd like to share my project filesystem, how I manage it, and why I do it this way. My intention is not to say "this is the best filesystem" or "you should manage your files this way", because different people will need different methods, and there is rarely a true one-size-fits-all approach —to anything. That said, this is the system that works for me, and that I've developed over the past 5+ years. Use it, modify it, and leave a like if you find it useful!

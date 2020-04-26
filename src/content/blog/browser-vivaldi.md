@@ -3,6 +3,7 @@ path: browser-vivaldi
 date: 2019-05-03
 title: Browser recommendation, or Why you should move to Vivaldi
 description: Vivaldi is a great browser, and here's why I love it over any other browser.
+categories: []
 ---
 
 Most of us are guilty of this. We keep too many tabs open. It gets difficult to find which one we were looking for, and the machine can get slow or hot from having to deal with so many tabs, auto-refreshes, data coming in, etc. We just don't know how powerful and personal our browser can be.
