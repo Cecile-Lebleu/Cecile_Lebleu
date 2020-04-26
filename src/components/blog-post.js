@@ -2,12 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "./layout"
-import TextContent from "../components/TextContent"
+import TextContent from "./TextContent"
+import TOC from "./toc"
 
 export default ({ data }) => {
    const post = data.markdownRemark
    return (
       <Layout>
+         <TOC headings={post.headings} />
          <TextContent>
             <h1>{post.frontmatter.title}</h1>
             <p>{post.frontmatter.description}</p>
@@ -17,7 +19,7 @@ export default ({ data }) => {
       </Layout>
    )
 }
- // TODO: Add categories/tags here
+
 export const query = graphql`
    query($slug: String!) {
       markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -25,6 +27,9 @@ export const query = graphql`
          frontmatter {
             title
             description
+         }
+         headings(depth: h2) {
+            value
          }
       }
    }

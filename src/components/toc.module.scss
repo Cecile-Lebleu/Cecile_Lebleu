@@ -1,0 +1,26 @@
+.toc {
+   position: fixed;
+   margin-top: 5rem;
+   width: calc(50vw - 25rem);
+   right: 1rem;
+
+   .container {
+      background-color: var(--highlight);
+      width: 50%;
+      margin: 0 auto;
+      padding: 1rem;
+      font-family: var(--mono);
+
+      h6 {
+         margin: 0;
+      }
+
+      .tocLinks {
+         margin: 0.7rem 0;
+         
+         a {
+            font-size: 1rem;
+         }
+      }
+   }
+}
