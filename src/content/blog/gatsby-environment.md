@@ -1,6 +1,6 @@
 ---
 path: gatsby-environment
-date: 2020-01-15T15:10:00.000Z
+date: 2020-01-15
 title: Dev Setup for Gatsby
 description: How to set up your local development environment to work with Gatsby. Great for beginners, or for setting up a new computer or development workstation.
 ---

@@ -1,6 +1,6 @@
 ---
 path: basic-swift
-date: 2020-03-27T15:10:00.000Z
+date: 2020-03-27
 title: Practical Swift Introduction for JS Developers
 description: This is a quick-start guide to developing apps using Swift, from the perspective of a front-end developer who knows JavaScript as the main language. I will be comparing both languages, pointing out the similarities and main differences.
 tags: ["swift"]

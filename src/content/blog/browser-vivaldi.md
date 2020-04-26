@@ -1,6 +1,6 @@
 ---
 path: browser-vivaldi
-date: 2019-05-03T15:10:00.000Z
+date: 2019-05-03
 title: Browser recommendation, or Why you should move to Vivaldi
 description: Vivaldi is a great browser, and here's why I love it over any other browser.
 ---

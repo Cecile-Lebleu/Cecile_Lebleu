@@ -1,6 +1,6 @@
 ---
 path: folder-management
-date: 2019-06-18T15:10:00.000Z
+date: 2019-06-18
 title: How I manage my projects, folders, and files
 description: Take a look at my project filesystem, and how I scaled my organization to cover development and graphic design projects.
 ---
