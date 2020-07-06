@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "./layout"
-import TextContent from "./TextContent"
+import Layout from "../layout"
+import TextContent from "../TextContent"
 import TOC from "./toc"
 
 export default ({ data }) => {

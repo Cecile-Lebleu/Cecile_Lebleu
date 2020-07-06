@@ -55,7 +55,7 @@ exports.createPages = async ({
    }) => {
       createPage({
          path: node.fields.slug,
-         component: path.resolve(`./src/components/blog-post.js`),
+         component: path.resolve(`./src/components/blog/blog-post.js`),
          context: {
             // Data passed to context is available
             // in page queries as GraphQL variables.
