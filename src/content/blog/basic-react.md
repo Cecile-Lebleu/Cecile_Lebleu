@@ -2,7 +2,7 @@
 path: basic-react
 date: 2019-11-29
 title: Basics of React
-description: "From the ground up: Import, ReactDOM, JSX, Components, Styling, Props, Data, State."
+description: "From the ground up: Import, ReactDOM, JSX, Components, Styling, Props, Data, State, and Hooks."
 categories: ["react"]
 ---
 
@@ -40,6 +40,10 @@ ReactDOM.render(whatToRender, whereToRender)
 
 - **Where to render**: Usually an HTML container element. `document.getElementById("root")` is a good one, if you have an HTML with a `<div id="root"></div>`.
 
+```js
+ReactDOM.render(<App />, document.getElementById("root"))
+```
+
 ## JSX
 
 JSX allows us to ~basically~ write HTML in JavaScript. JSX is included in React, when we `import React from "react"`.
@@ -63,17 +67,13 @@ const App = () => <h3>My name is {`${firstName} ${lastName}`} // will render 'My
 
 ## Components
 
-### Functional Components
-
-Functional components are components created in a classic function.
-
-#### Arrow
+Components can be arrow functions...
 
 ```js
 const MyApp = () => <div>Content</div>
 ```
 
-#### Classic
+Or classic functions.
 
 ```js
 function App() {
@@ -85,7 +85,11 @@ function App() {
 }
 ```
 
-### Class-based Components
+These are all functional components. There's also class-based components, but I'll skip it because it's not actually necessary to know.
+
+<!-- ### Class-based Components
+
+Class-based components are kind of outdated now, so it's ok to stick to functional for the vast majority of cases.
 
 ```js
 class App extends React.Component {
@@ -110,7 +114,7 @@ import React, {Component} from "react"
 class App extends Component {...}
 ```
 
-If we `import React, {Component} from "react"` we can use `class App extends Component {}` instead of `class App extends React.Component {}`.
+If we `import React, {Component} from "react"` we can use `class App extends Component {}` instead of `class App extends React.Component {}`. -->
 
 ### Importing Components
 
@@ -240,45 +244,122 @@ import myData from "./myData"
 
 ## State
 
-State can only be used in class-based components (not in functional components).
+The best way to use State is using the `useState()` hook.
 
-To initiate state, we need to add a constructor. A constructor is always initialized with `super()`.
+`useState` has to be imported from React, luckily in one import statement.
 
 ```js
-class App extends React.Component {
-   constructor() {
-      super()
-      this.state = { answer: "Yes" }
-   }
-   render() {
-      <div>
-         <p>Is state important to know: {this.state.answer}</p>
-      </div>
-   }
+import React, { useState } from "react"
+```
+
+This is a function that uses state:
+
+```js
+function App() {
+   const state = useState("Yes")
+
+   return (
+      <p>Q: Should I learn state?<br />A: {state[0]}</p>
+   )
+}
+```
+
+`useState` returns an array. That's why in the example above we used `{state[0]}`. But state isn't generally intended to be used that way, instead using array destructuring. Another way of writing the same example:
+
+```js
+function App() {
+   const [state] = useState("Yes")
+
+   return (
+      <p>Q: Should I learn state?<br />A: {state}</p>
+   )
 }
 ```
 
 ### Changing the State
 
+The second argument of `useState` is a function that allows us to change the state directly (without having to use the o-ho-hol' `setState`). The function can be defined outside the `return` statement:
+
 ```js
-class App extends React.Component{
-   constructor(){
-      super()
-      this.state = {count: 0}
-      this.handleClick = this.handleClick.bind(this)
+function App() {
+   const [count, setCount] = useState(0)
+
+   function increment() {
+      setCount(prevCount => prevCount + 1)
    }
-   handleClick(){
-      this.setState(prevState => return {
-         count: prevState.count + 1
-      })
-   }
-   render(){
-      return(
-         <div>
-            <h1>{this.state.count}</h1>
-            <button onClick={this.handleClick}>Add!</button>
-         </div>
-      )
-   }
+
+   return (
+      <div>
+         <h1>{count}</h1>
+         <button onClick={increment}>Add</button>
+      </div>
+   )
 }
+```
+
+Or directly in the event handler:
+
+```js
+function App() {
+   const [count, setCount] = useState(0)
+
+   return (
+      <div>
+         <h1>{count}</h1>
+         <button
+            onClick={() => setCount(prevCount => prevCount + 1)}
+         >Add</button>
+      </div>
+   )
+}
+```
+
+## Hook: useEffect
+
+`useEffect` is a hook that allows to add "side effects" to our code.  Similar to `useState`, `useEffect` is a hook that comes with React. It's basically a replacement for the older lifecycle methods, like `componentDidMount` and the like. Just like `useState`, it has to be imported.
+
+```js
+import React, { useEffect } from "react"
+```
+
+### How to run something right after state changes
+
+```js
+import React, {useState, useEffect} from "react"
+import randomcolor from "randomcolor"
+
+function App() {
+   const [count, setCount] = useState(0)
+   const [color, setColor] = useState("")
+
+   function increment() {
+      setCount(prevCount => prevCount + 1)
+   }
+
+   function decrement() {
+      setCount(prevCount => prevCount - 1)
+   }
+
+   useEffect(() => {
+      setColor(randomcolor())
+   }, [count])
+
+   return (
+      <div>
+         <h1 style={{color: color}}>{count}</h1>
+         <button onClick={increment}>Increment</button>
+         <button onClick={decrement}>Decrement</button>
+      </div>
+   )
+}
+```
+
+`useEffect` runs right after the state of `count` changes, each time providing a new random color for the counter itself. Notice we pass an array with `count` as the second argument: This tells `useEffect` to run only when the state of `count` is updated (but no other state). This effectively avoids infinite loops and pesky bugs.
+
+To make it run only once — when the component first renders, but then never again — we can pass an empty array instead; basically saying "listen for the change of state in nothing".
+
+```js
+useEffect(() => {
+   setColor(randomcolor())
+}, [])
 ```
