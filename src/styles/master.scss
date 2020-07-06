@@ -5,16 +5,17 @@
 
 :root {
    --content: #363636;
-   /* --color: #ed2540; */
    --color: hsl(349, 82%, 55%);
    --highlight: hsl(0, 0%, 93%);
    --highlightCode: hsl(0, 0%, 90%);
+   // --highlightCode: wheat;
    --background: hsl(0, 0%, 96%);
    --body: "CrimsonPro", sans-serif;
    --italic: "CrimsonProItalic";
    --mono: "IBM Plex Mono", monospace;
    --decorative: "Messapia", serif;
 }
+
 @media (prefers-color-scheme: dark) {
    :root {
       --content: #cecece;

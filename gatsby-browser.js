@@ -1,2 +1,2 @@
-require("./src/styles/master.css")
+require("./src/styles/master.scss")
 
