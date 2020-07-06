@@ -31,7 +31,7 @@ module.exports = {
                      wrapperClassName: 'code',
                      injectStyles: false,
                      replaceColor: oldColor => ({
-                        '#FDF6E3': 'var(--highlightCode)'
+								'#FDF6E3': 'var(--highlightCode)'
                      })[oldColor.toLowerCase()] || oldColor
                   }
                }
