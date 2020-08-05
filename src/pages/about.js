@@ -30,6 +30,15 @@ export default () => (
             </ul>
             <h2>Skills</h2>
             <p>What I'm good at, and <i>not-so-good-at</i> too, because I'm human after all <span role="img" aria-label="shrug">🤷🏼‍♀️</span></p>
+            <h3>Development</h3>
+            <ul className={styles.simple}>
+               <li>Current stack: Jamstack with React and Gatsby.</li>
+               <li>WordPress with Elementor, optionally WooCommerce. Will bug everyone about "plugin bloat" and nag about optimizations.</li>
+               <li>Always looking for the newest things to learn, and will avoid older frameworks and tools at all cost. I prefer using modern CSS over Bootstrap, for example, or <i>anything</i> over jQuery.</li>
+               <li>Currently diving into back-end database and the like, but so far, I'm far from knowledgeable in the field. I'd prefer working with your back-end engineer of choice.</li>
+               <li><b>Good at:</b> Front-End</li>
+               <li><b>Not so much:</b> Back-End</li>
+            </ul>
             <h3>Graphic</h3>
             <ul className={styles.simple}>
                <li>Walking know-it-all about typography. Will complain about kerning and use of "classic" default system fonts without a <i>very</i> good reason.</li>
@@ -37,15 +46,6 @@ export default () => (
                <li>Not so good at illustration or artistic things. It's too <i>free</i>. I prefer to keep art for personal leisure, and use tried-and-tested systems for client's projects.</li>
                <li><b>Good at:</b> Designing systems</li>
                <li><b>Not so much:</b> Arts & illustration</li>
-            </ul>
-            <h3>Development</h3>
-            <ul className={styles.simple}>
-               <li>Current stack: HTML, CSS, JavaScript, React, and Gatsby.</li>
-               <li>WordPress with Elementor, optionally WooCommerce. Will bug everyone about "plugin bloat" and nag about optimizations.</li>
-               <li>Always looking for the newest things to learn, and will avoid older frameworks and tools at all cost. I prefer using modern CSS over Bootstrap, for example, or <i>anything</i> over jQuery.</li>
-               <li>Currently diving into back-end database and the like, but so far, I'm far from knowledgeable in the field. I'd prefer working with your back-end engineer of choice.</li>
-               <li><b>Good at:</b> Front-End</li>
-               <li><b>Not so much:</b> Back-End</li>
             </ul>
             <h3>Cookery</h3>
             <ul className={styles.simple}>
@@ -107,7 +107,9 @@ export default () => (
                <li><span role="img" aria-label="floppy disc">💾</span> I worked and played in web development, doing the monotonous HTML and CSS my dad didn't want to do (lol), back when DreamWeaver was the best thing since sliced bread.</li>
                <li><span role="img" aria-label="kid">👧🏼</span> During my childhood and early years, I was in a great environment to learn all sorts of things. At-home summer jobs were the norm for me, and we were always doing something different.</li>
             </ul>
-
+			<br />
+			<br />
+			<p style={{textAlign: "center"}}><i>Last updated: August 1, 2020</i></p>
          </div>
       </TextContent>
    </Layout>
