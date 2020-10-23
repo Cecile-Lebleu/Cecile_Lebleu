@@ -1,42 +1,76 @@
-.intro {
-   display: grid;
-   grid-template-columns: 3fr 2fr;
-   padding-top: calc((100vh - 37rem) / 2);
+.area1 {
+	max-width: 50rem;
+	margin: auto;
+	padding: 1rem;
+	display: grid;
+	grid-gap: 1rem;
 
-   .container {
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+	@media screen and (min-width: 60rem) {
+		grid-template-columns: 2fr, 1fr;
+		grid-template-columns: 2fr 1fr;
+		grid-template-rows: 1fr;
+	}
 
-      .fleuron {
-         font-family: var(--decorative), serif;
-         font-weight: 200;
-         font-size: 10rem;
-         margin: 0;
-         color: var(--color)
-      }
+	.deco {
+		position: absolute;
+		// display: flex;
 
-      h2 {
-         margin: 0;
-         font-family: "IBM Plex Mono";
-         line-height: 3.5rem;
+		div {
+			height: 2rem;
+			width: 10rem;
+			border-radius: 1rem;
+			margin: 1rem 0;
+			mix-blend-mode: multiply;
+			transition-duration: 200ms;
+		}
 
-         span {
-            font-size: 4rem;
-            text-transform: uppercase;
-         }
-         span:nth-of-type(1) {
-            font-weight: 800;
-         }
-         span:nth-of-type(2) {
-            font-weight: 400;
-         }
-         span:nth-of-type(3) {
-            font-weight: 100;
-            font-style: italic;
-         }
-      }
+		div:hover {
+			height: 4rem;
+		}
 
-   }
+		div:nth-of-type(1) {
+			background-color: var(--lilac);
+			width: 8rem;
+		}
+		div:nth-of-type(2) {
+			background-color: #FBC6FF;
+			width: 14rem;
+		}
+		div:nth-of-type(3) {
+			background-color: #FFC6DE;
+			width: 6rem;
+		}
+		div:nth-of-type(4) {
+			background-color: #FFD4C6;
+			width: 10rem;
+		}
+	}
+
+	h2 span {
+		font-family: var(--mono);
+		font-size: 4.4rem;
+		text-transform: uppercase;
+	}
+	span:nth-of-type(1) {
+		font-weight: 900;
+	}
+	span:nth-of-type(2) {
+		font-weight: 400;
+	}
+	span:nth-of-type(3) {
+		font-weight: 100;
+		font-style: italic;
+	}
+	p {
+		font-family: var(--mono);
+		color: #ffffff;
+	}
+	button {
+		background-color: var(--lilac);
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		font-style: italic;
+		font-weight: 200;
+		letter-spacing: 0.1rem;
+	}
 }

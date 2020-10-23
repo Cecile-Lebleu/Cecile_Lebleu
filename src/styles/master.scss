@@ -3,51 +3,71 @@
 @import "normalize.css";
 @import "type.css";
 
+
 :root {
-   --content: #363636;
-   --color: hsl(349, 82%, 55%);
-   --highlight: hsl(0, 0%, 93%);
-   --highlightCode: hsl(0, 0%, 90%);
-   // --highlightCode: wheat;
-   --background: hsl(0, 0%, 96%);
-   --body: "CrimsonPro", sans-serif;
-   --italic: "CrimsonProItalic";
-   --mono: "IBM Plex Mono", monospace;
-   --decorative: "Messapia", serif;
+	--background: #fafafa;
+	--lilac: #CEC3FF;
+	--mono: "IBM Plex Mono", monospace;
+	
+
+   // --content: #363636;
+   // --color: hsl(349, 82%, 55%);
+   // --highlight: hsl(0, 0%, 93%);
+   // --highlightCode: hsl(0, 0%, 90%);
+   // // --highlightCode: wheat;
+	// --background: hsl(0, 0%, 96%);
+	
+   // --body: "CrimsonPro", sans-serif;
+   // --italic: "CrimsonProItalic";
+   // --decorative: "Messapia", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-   :root {
-      --content: #cecece;
-      --color: hsl(349, 82%, 55%);
-      --highlight:     #222222;
-      --highlightCode: #272727;
-      --background:    #181818;
-      --body: "CrimsonPro", sans-serif;
-      --italic: "CrimsonProItalic";
-      --mono: "IBM Plex Mono", monospace;
-      --decorative: "Messapia", serif;
-   }
+// @media (prefers-color-scheme: dark) {
+//    :root {
+//       --content: #cecece;
+//       --color: hsl(349, 82%, 55%);
+//       --highlight:     #222222;
+//       --highlightCode: #272727;
+//       --background:    #181818;
+//       --body: "CrimsonPro", sans-serif;
+//       --italic: "CrimsonProItalic";
+//       --mono: "IBM Plex Mono", monospace;
+//       --decorative: "Messapia", serif;
+//    }
+// }
+html {
+	font-size: 20px;
 }
 
 body {
-   background-color: var(--background);
-   margin: 0;
+	background-color: var(--background);
+	font-family: var(--mono);
+
+	p {
+		margin: 0.5rem 0;
+	}
+
+	button {
+		border: none;
+		border-radius: 0.5rem;
+		min-height: 2rem;
+		margin: 0.5rem 0;
+	}
 }
 
-hr {
-   border: none;
-   border-bottom: 1px solid var(--color);
-   margin: 2rem 0;
-}
+// hr {
+//    border: none;
+//    border-bottom: 1px solid var(--color);
+//    margin: 2rem 0;
+// }
 
-.gatsby-remark-autolink-headers-icon {
-   margin: 0;
-   bottom: 0;
-   display: flex;
-   align-items: center;
-}
+// .gatsby-remark-autolink-headers-icon {
+//    margin: 0;
+//    bottom: 0;
+//    display: flex;
+//    align-items: center;
+// }
 
-.gatsby-remark-autolink-headers-icon svg {
-   margin-top: 0.25rem;
-}
+// .gatsby-remark-autolink-headers-icon svg {
+//    margin-top: 0.25rem;
+// }
